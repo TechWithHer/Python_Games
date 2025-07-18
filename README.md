@@ -1,3 +1,5 @@
+> 🎮 A beginner-friendly collection of 7 interactive Python games, including logic puzzles, API-based trivia, and utility mini-apps — all organized under a unified launcher. Perfect for learning Python hands-on.
+
 # 🎮 Python_Games
 
 A collection of 7 beginner-friendly yet intelligent Python mini-games bundled with a central game launcher. This project is designed to boost Python fundamentals, problem-solving, and API integration skills. Great for beginners, students, and aspiring developers.
