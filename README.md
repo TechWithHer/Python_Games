@@ -1,4 +1,3 @@
-> 🎮 A beginner-friendly collection of 7 interactive Python games, including logic puzzles, API-based trivia, and utility mini-apps — all organized under a unified launcher. Perfect for learning Python hands-on.
 
 # 🎮 Python_Games
 
