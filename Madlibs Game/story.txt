@@ -1,0 +1,9 @@
+Story1: One day, {name} saw a {adjective} {animal} in the middle of {place}. It was trying to {verb} a {noun}!
+
+Story2: “{exclamation}!” shouted {name} as they {verb_past} into the {adjective} cave, only to find a pile of glowing {plural_noun}.
+
+Story3: During the trip to {place}, {name} and their {adjective} friend found a {noun} that could {verb} all by itself.
+
+Story4: My favorite way to relax is to {verb} {adverb} while listening to {plural_noun} in {place}.
+
+Story5: It was a {adjective} night when {name} decided to cook a {noun} using only a {tool} and some {plural_noun}.
