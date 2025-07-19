@@ -19,7 +19,7 @@ def guess_number(num):
     i = 0
     while i < 3:
         i += 1
-        guess = input("Enter your guess")
+        guess = input("Enter your guess ")
         if guess.isdigit():
             guess = int(guess)
             if guess < num:
@@ -33,7 +33,9 @@ def guess_number(num):
             print("Invalid input. Please enter a valid number or 'q' to quit.")
            
     if i == 3:
-        print("Thanks for playing! Your attempts are exhausted now. Goodbye!")   
+        print("The number was:", num)
+        print("Thanks for playing! Your attempts are exhausted now. Goodbye!")
+           
 
 
 top_of_range = input("Enter the START OF THE RANGE (must be a number >= 0): ")
@@ -45,4 +47,3 @@ else:
          print("Invalid input. Please enter a valid range.")
 num = random.randint(int(top_of_range), int(end_of_range))
 guess_number(num)
-

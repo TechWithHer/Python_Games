@@ -1,31 +1,60 @@
 import random
+from time import sleep
 
-# Conditions method
-def conditions(dice_roll, number):
-    if dice_roll == 1:
-        print("You rolled a 1, you lose!") 
-        return 0  # Reset the total to 0 if the user loses
-    else: 
-        number += dice_roll
-        print("You rolled a", dice_roll, "your total is", number)
-        return number
+# Game introduction
+print("===== Welcome to the : ROLL THE DICE GAME =====")
+sleep(3)
+print("Rules:")
+sleep(1)
+print("1) You will be playing against Computer")
+print("2) There will be 3 attempts to roll the dice.")
+print("3) We will sum up all the rolls.")
+print("4) One with the highest total wins.")
+name = input("Please enter your name: ")
+sleep(3)    
 
-# Game logic
-try_counter = 0
-total = 0
-print("Let's start the DICE ROLL GAME!")
-while True:
-    attempt = input("Would you like to roll? (y/n): ").lower()
-    if attempt == "y":
-        dice = random.randint(1, 6)  # Dice roll between 1 and 6
-        print("You rolled a", dice)
-        total = conditions(dice, total)  # Update the total based on the roll
-        try_counter += 1  # Increment the roll counter
-        print("Number of ATTEMPTS = ",try_counter)
-    elif attempt == "n":
-        print("Game over! You chose not to roll.")
-        try_counter += 1  # Increment the roll counter
-        print("Number of ATTEMPTS = ",try_counter)
+# Function to handle user action
+def user_action():
+    q = input("Press Enter to roll the dice...")
+    if q != "":
+        print("Invalid input. Chance lost. Please just press Enter to roll the dice.")
+        return 0  # Return 0 if invalid input
     else:
-        print("Invalid input. Please enter 'y' to roll or 'n' to quit.")
+        return random.randint(1, 6)  # Return a random dice roll
     
+def the_game(count_name, count_computer):
+    for attempt in range(3):
+        print(f"Attempt {attempt + 1}:")
+        sleep(1)
+        print(f"{name}'s turn to roll the dice.")
+        sleep(1)   
+        user_roll = user_action()  # Get the user's dice roll
+        if user_roll == 0:  # Check for invalid input
+            continue
+        print(f"{name} rolled: {user_roll}")
+        sleep(1)
+        print("Now it's the computer's turn.")
+        sleep(1)
+        computer_roll = random.randint(1, 6)  # Computer rolls the dice
+        print(f"Computer rolled: {computer_roll}")
+        sleep(2)
+        count_name += user_roll
+        count_computer += computer_roll
+    sleep(1)
+    print(f"Final Scores: {name}: {count_name}, Computer: {count_computer}")
+    sleep(1)
+    
+    if count_name > count_computer:
+        print(f"{name} wins this round!")
+    elif count_name < count_computer:
+        print("Computer wins this round!")
+    else:
+        print("It's a tie!")
+
+# Main Program
+print("Let's start the game, ", name, " Vs COMPUTER")
+counter_user = 0  # User's total score
+counter_computer = 0  # Computer's total score
+the_game(counter_user, counter_computer)
+sleep(2)
+print("Thank you for playing the Roll the Dice Game!")
