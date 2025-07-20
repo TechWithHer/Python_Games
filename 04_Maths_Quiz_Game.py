@@ -11,6 +11,7 @@ print("2) You will be given 5 attempts and all these attempts will be timed")
 print("3) You need answer correctly.")
 print("Let's begin!\n")
 
+
 #Generate Expressions 
 def generate_question():
   left = random.choice(OPERANDS)

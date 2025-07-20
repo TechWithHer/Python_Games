@@ -1,6 +1,0 @@
-print("Welcome to the Games Hub!")
-print("All the games are text-based and run in the terminal.")
-print("Choose a game to play:")
-print("1. Guess the Number")
-print("2. Pathfinder Maze")
-print("3. Exit")
