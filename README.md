@@ -1,7 +1,6 @@
+# 🎮 Python Games
 
-# 🎮 Python_Games
-
-A collection of 7 beginner-friendly yet intelligent Python mini-games bundled with a central game launcher. This project is designed to boost Python fundamentals, problem-solving, and API integration skills. Great for beginners, students, and aspiring developers.
+A collection of 7 beginner-friendly yet intelligent Python mini-games bundled with a **central launcher**. This project boosts your Python fundamentals, logic, and API integration skills. Ideal for beginners, students, and aspiring developers.
 
 ---
 
@@ -9,41 +8,34 @@ A collection of 7 beginner-friendly yet intelligent Python mini-games bundled wi
 
 | Game No | File Name                          | Description |
 |--------:|------------------------------------|-------------|
-| 01      | `01_Guess_Number_Game.py`          | A classic number guessing game. The computer selects a random number; the player tries to guess it in minimal attempts. |
-| 02      | `02_Roll_Dice_Game.py`             | Simulates rolling a 6-sided dice. Displays the result using ASCII art. |
-| 03      | `03_Stone_Paper_Scissors_Game.py`  | Traditional Rock, Paper, Scissors game where you play against the computer. |
-| 04      | `04_Maths_Quiz_Game.py`            | A fun quiz that asks randomized arithmetic questions with a scoring mechanism. |
-| 05      | `05_Password_Generator.py`         | Generates strong, secure passwords based on user preferences for length and character types. |
-| 06      | `06_Madlibs_Game.py`               | Fill-in-the-blank style storytelling game using `story.txt` as a template. Makes funny or creative stories. |
-| 07      | `07_Guess_Country_Game.py`         | API-powered game that gives you clues (capital, currency, population) and lets you guess the country. Uses the REST Countries API. |
+| 01      | `01_Guess_Number_Game.py`          | A classic number guessing game where the computer picks a number and you try to guess it in as few attempts as possible. |
+| 02      | `02_Roll_Dice_Game.py`             | Simulates rolling a 6-sided dice and shows the result using ASCII art. |
+| 03      | `03_Stone_Paper_Scissors_Game.py`  | Traditional Rock, Paper, Scissors game against the computer. |
+| 04      | `04_Maths_Quiz_Game.py`            | Fun math quiz with random arithmetic questions and scoring system. |
+| 05      | `05_Password_Generator.py`         | Generates strong passwords based on length and character preferences. |
+| 06      | `06_Madlibs_Game.py`               | A storytelling game using `story.txt` where you fill in the blanks to create funny stories. |
+| 07      | `07_Guess_Country_Game.py`         | A country guessing game using live data from the REST Countries API. |
 
 ---
 
 ## 🚀 How to Play
 
 1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/your-username/Python_Games.git
-   cd Python_Games
+
+git clone https://github.com/your-username/Python_Games.git
+cd Python_Games
+
 Install Required Packages
-Only one game requires an external library:
+Only one game (Game 07) requires an external package:
 
-bash
-Copy
-Edit
 pip install requests
-Run the Main Game Launcher
+Run the Game Launcher
 
-bash
-Copy
-Edit
 python Main_Python_Games.py
-You'll be prompted with a menu to select any game.
+Choose a game from the menu and start playing! 🕹️
 
 📁 Project Structure
-bash
-Copy
-Edit
+
 Python_Games/
 ├── 01_Guess_Number_Game.py
 ├── 02_Roll_Dice_Game.py
@@ -52,46 +44,37 @@ Python_Games/
 ├── 05_Password_Generator.py
 ├── 06_Madlibs_Game.py
 ├── 07_Guess_Country_Game.py
-├── Main_Python_Games.py         # Master launcher file
-├── story.txt                    # Used by Madlibs game
-└── README.md                    # You're reading it!
+├── Master_Launcher.py         # Master launcher script
+├── story.txt                    # Template for Madlibs
+└── README.md                    # Project documentation
 💡 Key Highlights
-🎯 Interactive and logic-based Python games
 
-🌐 Real-time API integration (REST Countries API)
-
-🧩 Great for learning conditionals, loops, I/O, and data handling
-
-💡 Ideal for beginners or coding practice sessions
-
-🧭 Easy to extend with new games via Main_Python_Games.py
+🎯 Interactive logic-based games to sharpen your thinking
+🌐 API-powered gameplay for real-world coding practice
+🧩 Excellent for learning: conditionals, loops, functions, file I/O
+🧭 Easy to extend with new games via the launcher menu
 
 🛠 Technologies Used
+
 Python 3.6+
-
-random, time, sys, os – from the standard library
-
-requests – for live API data in the country guessing game
-
-Basic file I/O (story.txt)
+Built-in libraries: random, time, sys, os
+External library: requests (only for Game 07)
+File handling (story.txt)
 
 🔧 Requirements
-Python 3.6 or later
 
-Terminal / Command Prompt / IDE (VSCode, PyCharm, etc.)
-
-Internet connection (only for Game 07)
+Python 3.6 or above
+Terminal / IDE (VSCode, PyCharm, etc.)
+Internet connection (only needed for Game 07)
 
 🧪 How to Contribute
 Want to add your own Python game?
-
-Fork the repository
-
-Create a new game file (08_Hangman_Game.py, for example)
-
-Add it to Main_Python_Games.py menu logic
-
-Submit a pull request 🎉
+Fork this repository
+Add your game file (e.g., 08_Hangman_Game.py)
+Update the launcher logic in Main_Python_Games.py
+Submit a pull request 🚀
 
 📄 License
-This project is open-source and available under the MIT License.
+This project is licensed under the MIT License. You are free to use, modify, and distribute it with attribution.
+
+Created with ❤️ to make learning Python fun and hands-on!
