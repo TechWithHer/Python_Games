@@ -14,7 +14,7 @@ A collection of 7 beginner-friendly yet intelligent Python mini-games bundled wi
 | 04      | `04_Maths_Quiz_Game.py`            | Fun math quiz with random arithmetic questions and scoring system. |
 | 05      | `05_Password_Generator.py`         | Generates strong passwords based on length and character preferences. |
 | 06      | `06_Madlibs_Game.py`               | A storytelling game using `story.txt` where you fill in the blanks to create funny stories. |
-| 07      | `07_Guess_Country_Game.py`         | A country guessing game using live data from the REST Countries API. |
+| 07      | `07_Guess_the_Pokemon.py`         | A country guessing game using live data from the REST Countries API. |
 
 ---
 
@@ -29,9 +29,10 @@ Install Required Packages
 Only one game (Game 07) requires an external package:
 
 pip install requests
+
 Run the Game Launcher
 
-python Main_Python_Games.py
+python3 Master_Launcher.py
 Choose a game from the menu and start playing! 🕹️
 
 📁 Project Structure
@@ -47,6 +48,7 @@ Python_Games/
 ├── Master_Launcher.py         # Master launcher script
 ├── story.txt                    # Template for Madlibs
 └── README.md                    # Project documentation
+
 💡 Key Highlights
 
 🎯 Interactive logic-based games to sharpen your thinking
@@ -68,6 +70,7 @@ Terminal / IDE (VSCode, PyCharm, etc.)
 Internet connection (only needed for Game 07)
 
 🧪 How to Contribute
+
 Want to add your own Python game?
 Fork this repository
 Add your game file (e.g., 08_Hangman_Game.py)
@@ -77,4 +80,4 @@ Submit a pull request 🚀
 📄 License
 This project is licensed under the MIT License. You are free to use, modify, and distribute it with attribution.
 
-Created with ❤️ to make learning Python fun and hands-on!
+Created with ❤️ to make learning Python fun and hands-on! 
