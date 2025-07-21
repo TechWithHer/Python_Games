@@ -9,7 +9,7 @@ def show_menu():
     print("4. MATHS QUIZ GAME ❌⭕")
     print("5. Password Generator 🔐")
     print("6. MADLIBS GAME ⌨️")
-    print("7. GUESS THE COUNTRY GAME 🧩")
+    print("7. GUESS THE POKEMON GAME 🧩")
     print("0. Exit 🚪")
 
 def launch_game(choice):
@@ -20,7 +20,7 @@ def launch_game(choice):
         "4": "04_Maths_Quiz_Game.py",
         "5": "05_Password_Generator.py",
         "6": "06_Madlibs_Game.py",
-        "7": "07_Guess_Country_Game.py"
+        "7": "07_Guess_the_Pokemon.py"
     }
 
     if choice in game_files:
