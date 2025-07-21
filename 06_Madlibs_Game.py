@@ -1,40 +1,33 @@
-
+import random 
 from time import sleep
-import random
-import re
+import os
 
-#Step 1: Read stories from the file
-with open("story.txt","r") as file:
-    lines = file.readlines()
-    stories = [line.strip() for line in lines if line.strip()]
+#Game Rules 
 
-#Step 2: Randomly select a story
-story = random.choice(stories) 
-
-#Step 3: Print the selected story
-print("Here's a random story for you:\n")
-
-print("Welcome to the Mad Libs Game!")
-sleep(3)
-print("Please answer the following questions:\n")
-
-name = input("Enter a person's name: ")
-adjective1 = input("Enter an adjective: ")
-noun1 = input("Enter a noun: ")
-verb_past = input("Enter a verb (past tense): ")
-adverb = input("Enter an adverb (ends in -ly): ")
-adjective2 = input("Enter another adjective: ")
-plural_noun = input("Enter a plural noun: ")
-exclamation = input("Enter an exclamation (e.g., Wow!): ")
-verb_present = input("Enter a verb (present tense): ")
-place = input("Enter a place: ")
+print("Welcome to MADLIBS GAME")
+print("You will be asked few words to fill in the story picked randomly from our collections of 5 stories. ")
+sleep(2)
+print("Let's start")
 
 
-print("\nHere's your Mad Libs story!\n")
-print(f"One sunny morning, {name} woke up feeling especially {adjective1}.")
-print(f"He looked out the window and saw a giant {noun1} in the yard!")
-print(f"Without thinking, he {verb_past} out the door {adverb} to greet it.")
-print(f"The {noun1} handed him a {adjective2} map that pointed to a land filled with sparkling {plural_noun}.")
-print(f'"{exclamation}" {name} exclaimed. "This is amazing!"')
-print(f"He started {verb_present} all the way to {place}, where the adventure truly began.")
+def select_story(adjective, noun,verb):
+   file_path = "story.txt"
+   
+   if os.path.exists(file_path):
+    with open(file_path, 'r') as file:
+       content = file.read()
+       stories = [story.strip() for story in content.split("=== STORY ===") if story.strip()]
+       selected_story = random.choice(stories)
+       filled_story = selected_story.format(adjective=adjective, noun=noun, verb=verb)
+    print("\n🎉 Here's your MadLibs story:\n")
+    print(filled_story)
+   else:
+     print("Some error reported")
 
+print("🎯 Let's build your story! I just need three words:")
+adjective = input("👉 Enter an *adjective* (describing word, like 'funny', 'smelly', 'brght'):")
+noun = input("👉 Enter a *noun* (a thing or person, like 'cat', 'robot', 'sandwich'): ")
+verb = input("👉 Enter a *verb* (an action, like 'dance', 'explode', 'hide'): ")
+print("Wait while we are generating the story")
+sleep(2)
+select_story(adjective, noun,verb)

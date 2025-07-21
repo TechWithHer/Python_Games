@@ -1,9 +1,14 @@
-Story1: One day, {name} saw a {adjective} {animal} in the middle of {place}. It was trying to {verb} a {noun}!
+=== STORY ===
+This morning, a {adjective} {noun} tried to {verb} into my backpack. I screamed and ran!
 
-Story2: “{exclamation}!” shouted {name} as they {verb_past} into the {adjective} cave, only to find a pile of glowing {plural_noun}.
+=== STORY ===
+My {adjective} neighbor owns a {noun} that can {verb} better than most people.
 
-Story3: During the trip to {place}, {name} and their {adjective} friend found a {noun} that could {verb} all by itself.
+=== STORY ===
+Yesterday, I watched a {noun} trying to {verb} across a {adjective} road.
 
-Story4: My favorite way to relax is to {verb} {adverb} while listening to {plural_noun} in {place}.
+=== STORY ===
+During lunch, a {adjective} {noun} walked into the cafeteria and started to {verb}!
 
-Story5: It was a {adjective} night when {name} decided to cook a {noun} using only a {tool} and some {plural_noun}.
+=== STORY ===
+The {adjective} sound of the {noun} made me want to {verb} all day.
